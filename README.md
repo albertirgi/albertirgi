@@ -6,7 +6,7 @@ I am a Mobile & Web Developer.
 
 *   🌍  I'm based in Surabaya, Indonesia
 *   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://codedamn.com/user/albertirgi'>Portfolio</a>
-*   🧠  Currently learning Computer Science in Petra Christian University with a specialization in Mobile & Web Development
+*   🧠  Currently learning Computer Science in <a target="_blank" rel="noreferrer" href='https://www.petra.ac.id/'>Petra Christian University</a> with a specialization in Mobile & Web Development
 *   🤝  I'm open to collaborating on interesting projects as a developer
 
 ### Skills
