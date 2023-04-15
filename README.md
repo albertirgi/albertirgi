@@ -5,7 +5,7 @@ I am a Mobile & Web Developer.
 --------------------------------
 
 I've been learning to code for three years...
-*   🌍  I'm based in Surabaya, Indonesia
+*   🌍  I'm based in Sidoarjo, Indonesia
 *   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://codedamn.com/user/albertirgi'>Portfolio</a> or my resume at <a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1Giv12CX8xEiIkPy7rDN_M2uFdDqPZ3SG/view?usp=share_link'>Resume</a>
 *   ✉️  You can contact me at [irgialbert@gmail.com](mailto:irgialbert@gmail.com)
 *   🧠  Currently learning Computer Science in <a target="_blank" rel="noreferrer" href='https://www.petra.ac.id/'>Petra Christian University</a> with a specialization in Mobile & Web Development
