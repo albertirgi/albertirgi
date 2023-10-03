@@ -8,7 +8,7 @@ I've been learning to code for three years...
 *   🌍  I'm based in Surabaya, Indonesia
 *   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://albertirgi.com'>Portfolio</a> or my resume at <a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1Giv12CX8xEiIkPy7rDN_M2uFdDqPZ3SG/view?usp=share_link'>Resume</a>
 *   ✉️  You can contact me at [irgialbert@gmail.com](mailto:irgialbert@gmail.com)
-*   🧠  Currently learning Computer Science in <a target="_blank" rel="noreferrer" href='https://www.petra.ac.id/'>Petra Christian University</a> with a specialization in Mobile & Web Development
+*   🧠  Currently learning Informatics in <a target="_blank" rel="noreferrer" href='https://www.petra.ac.id/'>Petra Christian University</a> with a specialization in Mobile & Web Development
 *   🤝  I'm open to collaborating on interesting projects as a Developer or UI/UX Designer
 
 ### Skills
