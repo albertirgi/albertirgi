@@ -14,15 +14,15 @@ I've been learning to code for three years...
 ### Skills
 
 <p align="left">
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=html" width="36" height="36" alt="HTML" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=css" width="36" height="36" alt="CSS" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=js" width="36" height="36" alt="JavaScript" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=ts" width="36" height="36" alt="TypeScript" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=react" width="36" height="36" alt="React" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=next" width="36" height="36" alt="Next.js" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=tailwind" width="36" height="36" alt="tailwind" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=scss" width="36" height="36" alt="SCSS" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=flutter" width="36" height="36" alt="Flutter" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=html&theme=light" width="36" height="36" alt="HTML" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=css&theme=light" width="36" height="36" alt="CSS" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=js&theme=light" width="36" height="36" alt="JavaScript" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=ts&theme=light" width="36" height="36" alt="TypeScript" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=react&theme=light" width="36" height="36" alt="React" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=next&theme=light" width="36" height="36" alt="Next.js" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=tailwind&theme=light" width="36" height="36" alt="tailwind" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=scss&theme=light" width="36" height="36" alt="SCSS" /></a> &nbsp
+<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=flutter&theme=light" width="36" height="36" alt="Flutter" /></a> &nbsp
 </p>
   
 
