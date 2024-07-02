@@ -29,9 +29,7 @@ I've been learning to code for three years...
 ### Socials
 
 <p align="left"> 
-  <a href="https://www.linkedin.com/in/albertirgi/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a> &nbsp;
-  <a href="https://stackoverflow.com/users/21627823/albert-muhammad-irgi" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/stackoverflow.svg" width="32" height="32" /></a> &nbsp;
-  <a href="https://discord.com/users/440791730309300264" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /></a> &nbsp;
-  
+  <a href="https://www.linkedin.com/in/albertirgi/" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=linkedin&theme=light" width="32" height="32" /></a> &nbsp;
+  <a href="https://discord.com/users/440791730309300264" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=discord&theme=light" width="32" height="32" /></a> &nbsp;
 </p>
 
