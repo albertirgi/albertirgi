@@ -4,7 +4,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 I am a Front End Developer.
 --------------------------------
 
-I've been learning to code for three years...
+I've been learning to code for four years...
 *   🌍  I'm based in Surabaya, Indonesia
 *   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://albertirgi.tech'>Portfolio</a> or my resume at <a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1kDeZhAZw7zHgF6Jb8NC2Gs-jISifpEnk/view?usp=sharing'>Resume</a>
 *   ✉️  You can contact me at [irgialbert@gmail.com](mailto:irgialbert@gmail.com)
