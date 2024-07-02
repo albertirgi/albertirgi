@@ -6,7 +6,7 @@ I am a Front End Developer.
 
 I've been learning to code for four years...
 *   🌍  I'm based in Surabaya, Indonesia
-*   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://albertirgi.tech'>Portfolio</a> or my resume at <a target="_blank" rel="noreferrer" href='https://www.albertirgi.me/static/media/Resume_Albert-Muhammad-Irgi.7914ba7df803303a2273.pdf'>Resume</a>
+*   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://albertirgi.me'>Portfolio</a> or my resume at <a target="_blank" rel="noreferrer" href='https://www.albertirgi.me/static/media/Resume_Albert-Muhammad-Irgi.7914ba7df803303a2273.pdf'>Resume</a>
 *   ✉️  You can contact me at [irgialbert@gmail.com](mailto:irgialbert@gmail.com)
 *   🧠  Currently learning Informatics in <a target="_blank" rel="noreferrer" href='https://www.petra.ac.id/'>Petra Christian University</a> with a specialization in Mobile & Web Development
 *   🤝  I'm open to collaborating on interesting projects as a Front End Developer
