@@ -1,4 +1,4 @@
-Hi !<img src="https://raw.githubusercontent.com/aemmadi/aemmadi/master/wave.gif" width="20"/>My name is Albert Muhammad Irgi
+Hi ! <img src="https://raw.githubusercontent.com/aemmadi/aemmadi/master/wave.gif" width="40"/> My name is Albert Muhammad Irgi
 ============================================================================================================================================
 
 I am a Front End Developer.
