@@ -14,15 +14,15 @@ I've been learning to code for four years...
 ### Skills
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=html&theme=light" width="36" height="36" alt="HTML" /> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=css&theme=light" width="36" height="36" alt="CSS" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=js&theme=light" width="36" height="36" alt="JavaScript" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=ts&theme=light" width="36" height="36" alt="TypeScript" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=react&theme=light" width="36" height="36" alt="React" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=next&theme=light" width="36" height="36" alt="Next.js" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=tailwind&theme=light" width="36" height="36" alt="tailwind" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=scss&theme=light" width="36" height="36" alt="SCSS" /></a> &nbsp
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=flutter&theme=light" width="36" height="36" alt="Flutter" /></a> &nbsp
+  <img src="https://skillicons.dev/icons?i=html&theme=light" width="36" height="36" alt="HTML" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=css&theme=light" width="36" height="36" alt="CSS" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=js&theme=light" width="36" height="36" alt="JavaScript" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=ts&theme=light" width="36" height="36" alt="TypeScript" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=react&theme=light" width="36" height="36" alt="React" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=next&theme=light" width="36" height="36" alt="Next.js" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=tailwind&theme=light" width="36" height="36" alt="tailwind" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=scss&theme=light" width="36" height="36" alt="SCSS" /> &nbsp
+  <img src="https://skillicons.dev/icons?i=flutter&theme=light" width="36" height="36" alt="Flutter" /> &nbsp
 </p>
   
 
