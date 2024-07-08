@@ -14,7 +14,7 @@ I've been learning to code for four years...
 ### Skills
 
 <p align="left">
-<a rel="noreferrer"><img src="https://skillicons.dev/icons?i=html&theme=light" width="36" height="36" alt="HTML" /></a> &nbsp
+<img src="https://skillicons.dev/icons?i=html&theme=light" width="36" height="36" alt="HTML" /> &nbsp
 <a rel="noreferrer"><img src="https://skillicons.dev/icons?i=css&theme=light" width="36" height="36" alt="CSS" /></a> &nbsp
 <a rel="noreferrer"><img src="https://skillicons.dev/icons?i=js&theme=light" width="36" height="36" alt="JavaScript" /></a> &nbsp
 <a rel="noreferrer"><img src="https://skillicons.dev/icons?i=ts&theme=light" width="36" height="36" alt="TypeScript" /></a> &nbsp
