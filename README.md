@@ -19,7 +19,6 @@ I've been learning to code for four years...
   <img src="https://skillicons.dev/icons?i=js&theme=light" width="36" height="36" alt="JavaScript" /> &nbsp
   <img src="https://skillicons.dev/icons?i=ts&theme=light" width="36" height="36" alt="TypeScript" /> &nbsp
   <img src="https://skillicons.dev/icons?i=react&theme=light" width="36" height="36" alt="React" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=next&theme=light" width="36" height="36" alt="Next.js" /> &nbsp
   <img src="https://skillicons.dev/icons?i=tailwind&theme=light" width="36" height="36" alt="tailwind" /> &nbsp
   <img src="https://skillicons.dev/icons?i=scss&theme=light" width="36" height="36" alt="SCSS" /> &nbsp
   <img src="https://skillicons.dev/icons?i=flutter&theme=light" width="36" height="36" alt="Flutter" /> &nbsp
