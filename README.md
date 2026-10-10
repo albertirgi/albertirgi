@@ -1,34 +1,25 @@
-Hi! <img src="https://raw.githubusercontent.com/aemmadi/aemmadi/master/wave.gif" width="40"/> My name is Albert Muhammad Irgi
-============================================================================================================================================
+<div align="center">
 
-I am a Front End Developer.
---------------------------------
+<h3><code>albertirgi@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap" />
 
-I've been learning to code for four years...
-*   🌍  I'm based in Bali, Indonesia
-*   🖥️  See my portfolio at <a target="_blank" rel="noreferrer" href='https://albertirgi.vercel.app'>Portfolio</a> or my resume at <a target="_blank" rel="noreferrer" href='https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0'>Resume</a>
-*   ✉️  You can contact me at [irgialbert@gmail.com](mailto:irgialbert@gmail.com)
-*   🧠  Currently learning Informatics in <a target="_blank" rel="noreferrer" href='https://www.petra.ac.id/'>Petra Christian University</a> with a specialization in Mobile & Web Development
-*   🤝  I'm open to collaborating on interesting projects as a Front End Developer
+<br><br>
 
-### Skills
+<h3><code>albertirgi@github ~ $ whoami</code></h3>
+<table>
+  <tr>
+    <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Albert Muhammad Irgi" /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="Freelance Software Engineer at ByteMe, previously Frontend Engineer at ORDO and Frontend Intern at Komunal Indonesia. Based in Denpasar, Bali. Skills: HTML, CSS, JavaScript, Dart, React, Vue, Next.js, Flutter, Electron, Tailwind CSS, SASS, Bootstrap." /></td>
+  </tr>
+</table>
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=html&theme=light" width="36" height="36" alt="HTML" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=css&theme=light" width="36" height="36" alt="CSS" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=js&theme=light" width="36" height="36" alt="JavaScript" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=ts&theme=light" width="36" height="36" alt="TypeScript" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=react&theme=light" width="36" height="36" alt="React" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=tailwind&theme=light" width="36" height="36" alt="tailwind" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=scss&theme=light" width="36" height="36" alt="SCSS" /> &nbsp
-  <img src="https://skillicons.dev/icons?i=flutter&theme=light" width="36" height="36" alt="Flutter" /> &nbsp
-</p>
-  
+<br>
 
-### Socials
+<h3><code>albertirgi@github ~ $ ls ./links</code></h3>
+<a target="_blank" rel="noreferrer" href="https://albertirgi.vercel.app"><code>portfolio</code></a> &nbsp;
+<a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0"><code>resume</code></a> &nbsp;
+<a href="mailto:irgialbert@gmail.com"><code>email</code></a> &nbsp;
+<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/albertirgi/"><code>linkedin</code></a> &nbsp;
+<a target="_blank" rel="noreferrer" href="https://discord.com/users/440791730309300264"><code>discord</code></a>
 
-<p align="left"> 
-  <a href="https://www.linkedin.com/in/albertirgi/" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=linkedin&theme=light" width="32" height="32" /></a> &nbsp;
-  <a href="https://discord.com/users/440791730309300264" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=discord&theme=light" width="32" height="32" /></a> &nbsp;
-</p>
-
+</div>
