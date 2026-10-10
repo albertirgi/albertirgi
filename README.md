@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Albert Muhammad Irgi" /></td>
-    <td valign="top"><img src="./info-card.svg" width="490" alt="Freelance Software Engineer at ByteMe, previously Frontend Engineer at ORDO and Frontend Intern at Komunal Indonesia. Based in Denpasar, Bali. Skills: HTML, CSS, JavaScript, Dart, React, Vue, Next.js, Flutter, Electron, Tailwind CSS, SASS, Bootstrap." /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="Freelance Software Engineer at ByteMe, previously Frontend Engineer at ORDO and Frontend Intern at Komunal Indonesia. Based in Bali, Indonesia. Skills: HTML, CSS, JavaScript, Dart, React, Vue, Next.js, Flutter, Electron, Tailwind CSS, SASS, Bootstrap." /></td>
   </tr>
 </table>
 
