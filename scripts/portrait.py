@@ -2,10 +2,12 @@
 """
 Turn a photo into a monochrome ASCII-art SVG that "types" itself in row by row
 (SMIL clip wipes, which GitHub plays inside <img>), then freezes.
-The subject is cut out with rembg (isnet-anime model) and put on white, so the
-background prints blank and dark lines/hair print dense, like ink on paper.
-Run locally when the photo changes (defaults to the GitHub avatar):
-  uv run --python 3.12 --with "rembg[cpu]" --with pillow python scripts/portrait.py [photo]
+Two modes (PRINT env):
+  bright (default) - photo on a dark background: light areas print dense. Pillow only:
+      python3 scripts/portrait.py [photo]
+  dark - line art / anime: rembg (isnet-anime) cuts the subject onto white, dark lines print dense:
+      PRINT=dark uv run --python 3.12 --with "rembg[cpu]" --with pillow python scripts/portrait.py [photo]
+Defaults to the GitHub avatar.
 """
 import html
 import io
@@ -14,7 +16,6 @@ import sys
 import urllib.request
 
 from PIL import Image, ImageFilter, ImageOps
-from rembg import new_session, remove
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else "https://github.com/albertirgi.png?size=460"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ascii-portrait.svg")
@@ -24,23 +25,27 @@ COLS = int(os.environ.get("COLS", 150))
 ART_W = 800
 CELL_W = ART_W / COLS
 CELL_H = CELL_W * 15 / 8  # ~monospace glyph aspect
-RAMP = " .`:-=+*cs#%@"    # bright (blank) -> dark (dense)
-GAMMA = float(os.environ.get("GAMMA", 0.25))  # <1 lightens mids -> sparser chars
-WHITE_FLOOR = 0.93        # luminance above this prints nothing (the white background)
+RAMP = " .`:-=+*cs#%@"    # sparse -> dense
+DARK = os.environ.get("PRINT", "bright") == "dark"
+GAMMA = float(os.environ.get("GAMMA", 0.25 if DARK else 1.2))  # applied to luminance before mapping
+FLOOR = 0.93 if DARK else 0.2  # luminance past this prints nothing (white cutout bg / dark photo bg)
 ALPHA_CUT = 80            # rembg alpha below this is background (drops faint ghosts, keeps soft hair)
-LINE_THICKEN = int(os.environ.get("THICKEN", 5))  # MinFilter size: fattens dark line art so it survives downsampling
-CROP = tuple(float(v) for v in os.environ.get("CROP", "0.13,0.02,0.87,0.76").split(","))  # square box, fractions of w/h
+THICKEN = int(os.environ.get("THICKEN", 5 if DARK else 3))  # odd filter size: fattens thin ink lines so they survive downsampling
+CROP = tuple(float(v) for v in os.environ.get("CROP", "0.13,0.02,0.87,0.76" if DARK else "0,0.15,0.85,1").split(","))  # fractions of w/h
 
 PAD, TITLE_H, STATUS_H = 20, 30, 30
 BG, BG2, FRAME, MUTED, INK = "#0d1117", "#111722", "#30363d", "#7d8590", "#c9d1d9"
 ROW_DUR = 5.8 / COLS * 15 / 8  # whole portrait prints in ~6s
 
 raw = urllib.request.urlopen(SRC).read() if SRC.startswith("http") else open(SRC, "rb").read()
-cut = remove(Image.open(io.BytesIO(raw)).convert("RGB"), session=new_session("isnet-anime"))
-cut.putalpha(cut.getchannel("A").point(lambda a: 255 if a >= ALPHA_CUT else 0))
-im = Image.new("RGBA", cut.size, "white")
-im.alpha_composite(cut)
-im = im.convert("L").filter(ImageFilter.MinFilter(LINE_THICKEN))
+im = Image.open(io.BytesIO(raw)).convert("RGB")
+if DARK:
+    from rembg import new_session, remove
+    cut = remove(im, session=new_session("isnet-anime"))
+    cut.putalpha(cut.getchannel("A").point(lambda a: 255 if a >= ALPHA_CUT else 0))
+    im = Image.new("RGBA", cut.size, "white")
+    im.alpha_composite(cut)
+im = im.convert("L").filter((ImageFilter.MinFilter if DARK else ImageFilter.MaxFilter)(THICKEN))
 im = ImageOps.autocontrast(im.crop([round(c * im.size[i % 2]) for i, c in enumerate(CROP)]), cutoff=1)
 w, h = im.size
 rows_n = round(COLS * h / w * 8 / 15)
@@ -52,7 +57,10 @@ for y in range(rows_n):
     line = ""
     for x in range(COLS):
         lum = (px[x, y] / 255) ** GAMMA
-        line += " " if lum > WHITE_FLOOR else RAMP[round((1 - lum) * (len(RAMP) - 1))]
+        if DARK:
+            line += " " if lum > FLOOR else RAMP[round((1 - lum) * (len(RAMP) - 1))]
+        else:
+            line += " " if lum < FLOOR else RAMP[round(lum * (len(RAMP) - 1))]
     rows.append(line)
 
 art_h = rows_n * CELL_H

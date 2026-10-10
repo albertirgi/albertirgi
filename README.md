@@ -15,11 +15,15 @@
 
 <br>
 
-<h3><code>albertirgi@github ~ $ ls ./links</code></h3>
-<a target="_blank" rel="noreferrer" href="https://albertirgi.vercel.app"><code>portfolio</code></a> &nbsp;
-<a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0"><code>resume</code></a> &nbsp;
-<a href="mailto:irgialbert@gmail.com"><code>email</code></a> &nbsp;
-<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/albertirgi/"><code>linkedin</code></a> &nbsp;
-<a target="_blank" rel="noreferrer" href="https://discord.com/users/440791730309300264"><code>discord</code></a>
+<h3><code>albertirgi@github ~ $ ./links.sh</code></h3>
+
+<b>Software Engineer · Freelancer · Front End</b>
+
+<a href="https://albertirgi.vercel.app"><img src="https://img.shields.io/badge/Portfolio-albertirgi.vercel.app-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+<a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0"><img src="https://img.shields.io/badge/Resume-view_CV-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
+<a href="https://www.linkedin.com/in/albertirgi/"><img src="https://img.shields.io/badge/LinkedIn-albertirgi-0A66C2?style=for-the-badge" alt="LinkedIn" /></a>
+<br>
+<a href="mailto:irgialbert@gmail.com"><img src="https://img.shields.io/badge/Email-irgialbert%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://discord.com/users/440791730309300264"><img src="https://img.shields.io/badge/Discord-say_hi-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 
 </div>
