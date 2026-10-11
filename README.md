@@ -19,7 +19,7 @@
 
 <b>Software Engineer · Freelancer</b>
 
-<a href="https://albertirgi.vercel.app"><img src="https://img.shields.io/badge/Portfolio-albertirgi.vercel.app-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+<a href="https://albertirgi.com"><img src="https://img.shields.io/badge/Portfolio-albertirgi.com-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 <a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0"><img src="https://img.shields.io/badge/Resume-view_CV-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
 <a href="https://www.linkedin.com/in/albertirgi/"><img src="https://img.shields.io/badge/LinkedIn-albertirgi-0A66C2?style=for-the-badge" alt="LinkedIn" /></a>
 <br>
