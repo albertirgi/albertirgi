@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Albert Muhammad Irgi" /></td>
-    <td valign="top"><img src="./info-card.svg" width="490" alt="Freelance Software Engineer at ByteMe, previously Frontend Engineer at ORDO and Frontend Intern at Komunal Indonesia. Based in Bali, Indonesia. Skills: HTML, CSS, JavaScript, Dart, React, Vue, Next.js, Flutter, Electron, Tailwind CSS, SASS, Bootstrap." /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="Software Engineer at 3C Solutions, previously freelance Software Engineer at ByteMe, Frontend Engineer at ORDO Apps and Frontend Developer intern at Komunal Indonesia. Informatics graduate of Petra Christian University, based in Bali, Indonesia. Focus: web, mobile, desktop and AI automation. Open to work: on-site, hybrid or remote. Skills: HTML, CSS, JavaScript, TypeScript, Dart, React, Vue, Next.js, Angular, Laravel, Flutter, Electron, smart contracts, Tailwind CSS, SASS, Bootstrap." /></td>
   </tr>
 </table>
 
@@ -17,7 +17,7 @@
 
 <h3><code>albertirgi@github ~ $ ./links.sh</code></h3>
 
-<b>Software Engineer · Freelancer</b>
+<b>Software Engineer · Lifelong Learner</b>
 
 <a href="https://albertirgi.com"><img src="https://img.shields.io/badge/Portfolio-albertirgi.com-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 <a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0"><img src="https://img.shields.io/badge/Resume-view_CV-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
