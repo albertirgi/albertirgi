@@ -9,7 +9,7 @@
 <table>
   <tr>
     <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Albert Muhammad Irgi" /></td>
-    <td valign="top"><img src="./info-card.svg" width="490" alt="Software Engineer at 3C Solutions, previously freelance Software Engineer at ByteMe, Frontend Engineer at ORDO Apps and Frontend Developer intern at Komunal Indonesia. Informatics graduate of Petra Christian University, based in Bali, Indonesia. Focus: web, mobile, desktop and AI automation. Open to work: on-site, hybrid or remote. Skills: HTML, CSS, JavaScript, TypeScript, Dart, React, Vue, Next.js, Angular, Laravel, Flutter, Electron, smart contracts, Tailwind CSS, SASS, Bootstrap." /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="Focus: web, mobile, desktop and AI automation. Now: Software Engineer at 3C Solutions. Status: open to work, on-site, hybrid or remote." /></td>
   </tr>
 </table>
 
