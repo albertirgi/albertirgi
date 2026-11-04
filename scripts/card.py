@@ -1,23 +1,30 @@
 #!/usr/bin/env python3
 """
 Render info-card.svg: focus areas orbiting a glowing core (depth-scaled, comet trails, starfield),
-a "now" line that decrypts itself on a loop and a pinging open-to-work status.
+stack logos on two tilted inner rings, a "now" line that decrypts itself on a loop and a pinging open-to-work status.
 CSS + SMIL only, both of which GitHub plays inside <img>.
   python3 scripts/card.py
 """
 import html
 import os
 import random
+import re
+import urllib.request
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "info-card.svg")
 NOW = "Software Engineer @ 3C Solutions"
 EMPLOYER = "3C Solutions"  # highlighted once decrypted
-FOCUS = [("Web", "#22d3ee"), ("Mobile", "#39d353"), ("Desktop", "#bc8cff"), ("AI Automation", "#f2cc60")]
+FOCUS = [("Web", "#22d3ee"), ("Mobile", "#39d353"), ("Desktop", "#bc8cff"), ("AI Automation", "#f2cc60"), ("UI/UX Design", "#f778ba")]
+SI = "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/{}.svg"  # CC0 brand paths, 24x24
+STACK = [  # inner rings: (tilt deg, s per lap, reverse, [(simple-icons slug, colour on dark)])
+    (32, 22, False, [("react", "#61dafb"), ("nextdotjs", "#e6edf3"), ("vuedotjs", "#4fc08d"), ("angular", "#dd0031"), ("laravel", "#ff2d20")]),
+    (-32, 28, True, [("typescript", "#3178c6"), ("flutter", "#54c5f8"), ("electron", "#9feaf9"), ("tailwindcss", "#06b6d4"), ("figma", "#f24e1e")]),
+]
 MODES = ["on-site", "hybrid", "remote"]
 
 W, H = 490, 388  # 490 wide renders ~388 tall next to the 370-wide portrait
 CX, CY, RX, RY = 245, 146, 172, 50  # orbit
-LAP = 16  # s per orbit
+LAP = 18  # s per orbit
 GLYPHS = "!<>-_/[]{}=+*^?#$%&01"
 FRAMES, FRAME_S, CYCLE, DECRYPT_AT = 18, 0.055, 9.0, 1.3
 VX, NOW_Y, STATUS_Y = 110, 266, 304
@@ -43,21 +50,30 @@ while len(stars) < 26:
     stars.append(f'<circle class="tw" cx="{x:.0f}" cy="{y:.0f}" r="{random.uniform(.5, 1.2):.1f}" fill="{INK}" opacity=".5" '
                  f'style="animation-duration:{random.uniform(2.5, 6):.1f}s;animation-delay:{random.uniform(0, 3):.1f}s"/>')
 
-electrons = []
-for ang, dur in ((32, 5), (-32, 7.5)):
-    path = ring(96, 24)
-    electrons.append(f'<g transform="rotate({ang} {CX} {CY})"><path class="draw" d="{path}" pathLength="1" fill="none" stroke="{FRAME}"/>'
-                     f'<g class="in" style="animation-delay:1.2s"><g><animateMotion dur="{dur}s" repeatCount="indefinite" path="{path}"/>'
-                     f'<circle r="5" fill="#e6edf3" opacity=".12"/><circle r="1.8" fill="#e6edf3"/></g></g></g>')
+symbols, rings, logos = [], [], []
+for ang, lap, rev, stack in STACK:
+    path = ring(116, 32)
+    rings.append(f'<path class="draw" transform="rotate({ang} {CX} {CY})" d="{path}" pathLength="1" fill="none" stroke="{FRAME}"/>')
+    for k, (slug, color) in enumerate(stack):
+        d = re.search(r'<path d="([^"]+)"', urllib.request.urlopen(SI.format(slug)).read().decode())[1]
+        symbols.append(f'<symbol id="{slug}" viewBox="0 0 24 24"><path d="{d}"/></symbol>')
+        t = f'dur="{lap}s" begin="-{lap * k / len(stack):g}s" repeatCount="indefinite"'
+        back = ' keyPoints="1;0" keyTimes="0;1" calcMode="linear"' if rev else ""
+        logos.append(f'<g class="in" style="animation-delay:{1.2 + .08 * k:.2f}s" transform="rotate({ang} {CX} {CY})"><g>'
+                     f'<animateMotion {t}{back} path="{path}"/><g transform="rotate({-ang})"><g>'
+                     f'<animateTransform attributeName="transform" type="scale" values="1;.78;.58;.78;1" {DEPTH} {t}/>'
+                     f'<animate attributeName="opacity" values="1;.75;.45;.75;1" {DEPTH} {t}/>'
+                     f'<circle r="10" fill="#161b22" stroke="{color}" stroke-opacity=".45"/>'
+                     f'<use href="#{slug}" x="-6" y="-6" width="12" height="12" fill="{color}"/></g></g></g></g>')
 
 trails, nodes = [], []
 for k, (name, color) in enumerate(FOCUS):
     for length, width, op in ((34, 3, .1), (18, 2, .25), (7, 2, .6)):  # stacked dashes fake a fading tail
-        d0 = length - 25 * k
+        d0 = length - 100 * k / len(FOCUS)
         trails.append(f'<path d="{ORBIT}" pathLength="100" fill="none" stroke="{color}" stroke-width="{width}" stroke-linecap="round" '
-                      f'opacity="{op}" stroke-dasharray="{length} {100 - length}" stroke-dashoffset="{d0}">'
-                      f'<animate attributeName="stroke-dashoffset" from="{d0}" to="{d0 - 100}" dur="{LAP}s" repeatCount="indefinite"/></path>')
-    t = f'dur="{LAP}s" begin="-{LAP * k / 4:g}s" repeatCount="indefinite"'
+                      f'opacity="{op}" stroke-dasharray="{length} {100 - length}" stroke-dashoffset="{d0:g}">'
+                      f'<animate attributeName="stroke-dashoffset" from="{d0:g}" to="{d0 - 100:g}" dur="{LAP}s" repeatCount="indefinite"/></path>')
+    t = f'dur="{LAP}s" begin="-{LAP * k / len(FOCUS):g}s" repeatCount="indefinite"'
     nodes.append(f'<g class="in" style="animation-delay:{.9 + .12 * k:.2f}s"><g><animateMotion {t} path="{ORBIT}"/><g>'
                  f'<animateTransform attributeName="transform" type="scale" values="1;.78;.58;.78;1" {DEPTH} {t}/>'
                  f'<animate attributeName="opacity" values="1;.7;.4;.7;1" {DEPTH} {t}/>'
@@ -142,6 +158,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <radialGradient id="halo"><stop offset="0" stop-color="{CYAN}" stop-opacity=".45"/><stop offset="1" stop-color="{CYAN}" stop-opacity="0"/></radialGradient>
 <radialGradient id="orb" fx=".35" fy=".3"><stop offset="0" stop-color="#ecfeff"/><stop offset=".3" stop-color="{CYAN}"/><stop offset=".75" stop-color="#1f6feb"/><stop offset="1" stop-color="#0b3a8a"/></radialGradient>
 <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#1b2230"/></pattern>
+{"".join(symbols)}
 <clipPath id="card"><rect width="{W}" height="{H}" rx="12"/></clipPath>
 </defs>
 <rect width="{W}" height="{H}" rx="12" fill="url(#bg)"/>
@@ -153,7 +170,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 
 {chr(10).join(stars)}
 <text class="k in" style="animation-delay:.2s" x="24" y="58">Focus</text>
-{chr(10).join(electrons)}
+{chr(10).join(rings)}
 <path class="draw" d="{ORBIT}" pathLength="1" fill="none" stroke="#58a6ff" stroke-opacity=".5" mask="url(#depth)"/>
 <g class="in" style="animation-delay:.9s" mask="url(#depth)">
 {chr(10).join(trails)}
@@ -166,6 +183,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <text x="{CX}" y="{CY + 3}" fill="{BG}" font-size="8.5" font-weight="800" letter-spacing="1.2" text-anchor="middle">FOCUS</text>
 </g>
 <circle class="wave o" cx="{CX}" cy="{CY}" r="24" fill="none" stroke="{CYAN}" vector-effect="non-scaling-stroke"/>
+{chr(10).join(logos)}
 {chr(10).join(nodes)}
 
 <line class="in" style="animation-delay:1.1s" x1="24" y1="232" x2="{W - 24}" y2="232" stroke="#21262d"/>
