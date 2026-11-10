@@ -1,4 +1,4 @@
-name: Update contribution heatmap
+name: Update profile cards
 
 "on":
   schedule:
@@ -6,19 +6,21 @@ name: Update contribution heatmap
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: [scripts/heatmap.py]
+    paths: [scripts/cards.py, cards/portrait.txt]
 
 permissions:
   contents: write
 
 jobs:
-  heatmap:
+  cards:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/heatmap.py
+      - run: python3 scripts/cards.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add contrib-heatmap.svg
-          git diff --cached --quiet || { git commit -m "chore: refresh contribution heatmap [skip ci]" && git push; }
+          git add cards
+          git diff --cached --quiet || { git commit -m "chore: refresh profile cards [skip ci]" && git push; }

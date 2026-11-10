@@ -1,29 +1,16 @@
+<!-- Every card is an animated SVG drawn by scripts/cards.py and refreshed daily by
+     .github/workflows/update-cards.yml. Spacing is baked into the SVGs, so keep this block free of
+     blank lines and keep each row of cards on one line with no spaces between them. -->
 <div align="center">
-
-<h3><code>albertirgi@github ~ $ ./contributions.sh</code></h3>
-<img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap" />
-
-<br><br>
-
-<h3><code>albertirgi@github ~ $ whoami</code></h3>
-<table>
-  <tr>
-    <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Albert Muhammad Irgi" /></td>
-    <td valign="top"><img src="./info-card.svg" width="490" alt="Focus: web, mobile, desktop and AI automation. Now: Software Engineer at 3C Solutions. Status: open to work, on-site, hybrid or remote." /></td>
-  </tr>
-</table>
-
-<br>
-
-<h3><code>albertirgi@github ~ $ ./links.sh</code></h3>
-
-<b>Software Engineer · Lifelong Learner</b>
-
-<a href="https://albertirgi.com"><img src="https://img.shields.io/badge/Portfolio-albertirgi.com-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-<a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0"><img src="https://img.shields.io/badge/Resume-view_CV-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Resume" /></a>
-<a href="https://www.linkedin.com/in/albertirgi/"><img src="https://img.shields.io/badge/LinkedIn-albertirgi-0A66C2?style=for-the-badge" alt="LinkedIn" /></a>
-<br>
-<a href="mailto:irgialbert@gmail.com"><img src="https://img.shields.io/badge/Email-irgialbert%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://discord.com/users/440791730309300264"><img src="https://img.shields.io/badge/Discord-say_hi-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-
+<a href="https://albertirgi.com"><img src="./cards/hero.svg" width="100%" alt="Albert Irgi. Software Engineer at 3C Solutions. I build for web, mobile and desktop, and automate the rest with AI." /></a><br>
+<img src="./cards/heatmap.svg" width="100%" alt="Albert's contribution graph, in blue, refreshed daily" /><br>
+<img src="./cards/activity.svg" width="100%" alt="Contributions in the last 12 months, by month, with streaks and busiest day" /><br>
+<a href="https://albertirgi.com"><img src="./cards/globe.svg" width="33.333%" alt="BASED IN: Bali, Indonesia (GMT+8), pinned on a spinning dotted globe" /></a><a href="https://www.linkedin.com/in/albertirgi/"><img src="./cards/build.svg" width="33.333%" alt="I BUILD: web apps, mobile apps, desktop apps, AI automation, UI/UX design. Software Engineer at 3C Solutions." /></a><a href="mailto:irgialbert@gmail.com"><img src="./cards/hire.svg" width="33.333%" alt="HIRE ME: open to work, on-site, hybrid or remote" /></a><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/title-dark.svg" /><img src="./cards/title-light.svg" width="100%" alt="What I've built" /></picture><br>
+<a href="https://github.com/albertirgi/replica"><img src="./cards/replica.svg" width="100%" alt="replica: rebuild any UI from a reference and prove it with a score. A night sky with one star per GitHub stargazer." /></a><br>
+<a href="https://github.com/albertirgi/replica"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/replica-demo-dark.gif" /><img src="./cards/replica-demo-light.gif" width="100%" alt="replica demo: an agent clones the family.co hero, replica scores round 1 at 77.8, and round 2 passes" /></picture></a>
 </div>
+
+<p align="center">
+<a href="https://albertirgi.com">albertirgi.com</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/albertirgi/">linkedin</a> &nbsp;/&nbsp; <a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0">resume</a> &nbsp;/&nbsp; <a href="mailto:irgialbert@gmail.com">email</a> &nbsp;/&nbsp; <a href="https://discord.com/users/440791730309300264">discord</a>
+</p>
