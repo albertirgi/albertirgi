@@ -12,5 +12,5 @@
 </div>
 
 <p align="center">
-<a href="https://albertirgi.com">albertirgi.com</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/albertirgi/">linkedin</a> &nbsp;/&nbsp; <a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0">resume</a> &nbsp;/&nbsp; <a href="mailto:irgialbert@gmail.com">email</a> &nbsp;/&nbsp; <a href="https://discord.com/users/440791730309300264">discord</a>
+<a href="https://albertirgi.com">albertirgi.com</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/albertirgi/">linkedin</a> &nbsp;/&nbsp; <a href="https://docs.google.com/document/d/1zVcH-6_4RF3EQe6pjzTqTFYs9oi31A6S2pIPfxLldDw/edit?tab=t.0">resume</a> &nbsp;/&nbsp; <a href="mailto:irgialbert@gmail.com">email</a>
 </p>
