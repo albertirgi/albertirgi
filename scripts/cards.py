@@ -342,6 +342,31 @@ def tile(i, name, label, bg, ink, body, alt):
         + f'<g{delay(at + 0.5, "f")}>' + t(cw - 35, 38, "&#8594;", MONO, 14, ink, delay(at + 1.3, "n")) + "</g></g></g>")
 
 
+LINKS = [  # (card file, label, caption); the hrefs live in README.md
+    ("site", "Website", SITE), ("linkedin", "LinkedIn", "in/albertirgi"), ("resume", "Résumé", "google docs"),
+    ("email", "Email", "irgialbert@gmail.com"),
+]
+
+
+def links(at=4.2):
+    """Footer row: one small card per link, because an SVG in <img> can't carry its own hrefs.
+    Same 12px gaps and flush outer edges as tile()."""
+    n = len(LINKS)
+    cw = (880 - 12 * (n - 1)) / n
+    for i, (name, label, cap) in enumerate(LINKS):
+        a, accent = at + i * 0.12, [BLUE, RED, YELLOW][i % 3]
+        svg(f"link-{name}", 880 / n, 112, f"{label}: {cap}",
+            f'<defs><clipPath id="card"><rect width="{cw:.3f}" height="100" rx="14"/></clipPath></defs>'
+            f'<g transform="translate({12 * i / n:g} 0)"><g{delay(a, "ti")}><g clip-path="url(#card)">'
+            f'<rect width="{cw:.3f}" height="100" fill="{CREAM}"/>'
+            f'<rect{delay(a + 0.6, "gx")} y="96" width="{cw:.3f}" height="4" fill="{accent}"/></g>'
+            f'<g{delay(a + 0.35, "f")}><rect x="18" y="19" width="8" height="8" rx="2" fill="{accent}"/>'
+            + t(34, 27, f"{i + 1:02d}", MONO, 11, MUTED, ' letter-spacing="1"')
+            + t(cw - 30, 28, "&#8599;", MONO, 14, INK, ' class="nu"')
+            + t(17, 68, e(label), SERIF, 34, INK, ' font-style="italic"')
+            + t(18, 86, e(cap), MONO, 10, MUTED) + "</g></g></g>")
+
+
 def replica(stars, at=3.6):
     """Featured-repo card. Left: what it is, the four scoring axes filling to PASS, the install command typing
     itself. Right: a night sky with one star per stargazer, lit as the counter climbs, and a constellation
@@ -447,4 +472,5 @@ if __name__ == "__main__":
         svg(f"title-{theme}", 880, 64, "What I've built",
             t(2, 46, big("What I've", "built"), SERIF, 34, fill, delay(3.5, "r")))
     replica(stars)
+    links()
     print(f"wrote {OUT}: {sum(d['count'] for d in days):,} contributions, {stars} stars on {FEATURED}")
